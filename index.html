@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="shortcut icon" href="css/img/icon.ico" />
+
+    <title>Teste de Conhecimento - Desenvolvedor Web</title>
+  </head>
+  <body>
+    <!--
+      Modal
+    -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="modalContato" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h5 class="display-6 text-primary" id="modalContato">Contate-nos</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="email" class="form-control" id="nome" placeholder="Nome Completo">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" placeholder="email@email.com">
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea style="resize: none;" class="form-control" id="mensagem" rows="5" placeholder="Deixe sua mensagem"></textarea>
+            </div>
+          </form>
+          <div class="mx-auto">
+            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      Modal End
+    -->
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light.bg-gradient py-3 box-shadow"
+    >
+      <a href="index.html" class="navbar-brand ms-3">
+        <img src="css/img/logo.png" alt="Logo" width="50" height="50" /> Tomazyscki
+      </a>
+      <!--
+        Botão para abrir menu Mobile
+    -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--
+        Fim do Botão
+    -->
+
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav fs-5 navegacao">
+          <li class="nav-item active">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Sobre Nós</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <a href="#carouselHome" class="fas fa-arrow-up" id="seta-topo"></a>
+    <!--
+  Carousel
+-->
+    <section class="container-fluid js-anim">
+      <div class="row bg-dark">
+        <div class="col-lg-6 p-0">
+          <div
+            id="carouselHome"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="css/img/home-1.jpg"
+                  class="d-lg-block w-100 background d-none"
+                  alt="Home 1"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="display-4">Praticidade</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="css/img/home-2.jpg"
+                  class="d-lg-block w-100 background d-none"
+                  alt="Home 2"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="display-4">Soluções</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="css/img/home-3.jpg"
+                  class="d-lg-block w-100 background d-none"
+                  alt="Home "
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="display-4">Seriedade</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="css/img/home-4.jpg"
+                  class="d-lg-block w-100 background d-none"
+                  alt="Home 4"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="display-4">Assistência</h5>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselHome"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon visually-hidden"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselHome"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon visually-hidden"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Próximo</span>
+            </a>
+          </div>
+        </div>
+        <!--
+          Caroulsel fim
+        -->
+        <div class="col-lg-6 text-center text-white padding-mobile">
+          <h1 class="display-4 p-4">Deixe seus problemas conosco.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            iste sit nisi animi perspiciatis culpa, atque.
+          </p>
+          <a class="btn btn-primary btn-lg mt-3" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Fale Conosco</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light text-center py-3 js-anim">
+      <div class="container py-5">
+        <div>
+          <h2 class="display-4 text-primary">Clientes que representamos</h2>
+          <p>
+            Nossos clientes mais fiéis.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 py-xl-5 py-3">
+            <h4 class="text-primary pb-3">Empresa 1</h4>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+              tempore porro? Saepe aut quae recusandae quos eos, maiores dolores
+              tempora at ad iusto tenetur ab nemo quia praesentium quisquam
+              nesciunt.
+            </p>
+          </div>
+          <div class="col-xl-4 py-xl-5 py-3">
+            <h4 class="text-primary pb-3">Empresa 2</h4>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus quo excepturi ipsum cupiditate dolores animi nam?
+              Totam amet expedita laudantium iusto ad minima voluptate delectus
+              sint, ipsa est. Nisi, cumque!
+            </p>
+          </div>
+          <div class="col-xl-4 py-xl-5 py-3">
+            <h4 class="text-primary pb-3">Empresa 3</h4>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus quo excepturi ipsum cupiditate dolores animi nam?
+              Totam amet expedita laudantium iusto ad minima voluptate delectus
+              sint, ipsa est. Nisi, cumque!
+            </p>
+          </div>
+        </div>
+        <a href="#" class="btn btn-primary btn-lg mt-4">Saiba Mais</a>
+      </div>
+    </section>
+
+    <!--
+      Carousel Quote
+    -->
+    <div class="quote js-anim">
+      <section class="p-md-4 d-block mx-auto">
+        <h2 class="text-center py-5 display-5">Depoimentos</h2>
+        <div
+          id="carouselDepoimento"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-bs-target="#carouselDepoimento"
+              data-bs-slide-to="0"
+              class="active"
+            ></li>
+            <li
+              data-bs-target="#carouselDepoimento"
+              data-bs-slide-to="1"
+            ></li>
+            <li
+              data-bs-target="#carouselDepoimento"
+              data-bs-slide-to="2"
+            ></li>
+          </ol>
+          <div class="carousel-inner px-5 pb-5">
+            <div class="carousel-item active">
+              <blockquote class="blockquote text-center text-black p-md-4">
+                <em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab iusto
+                magni, aspernatur eum corrupti fuga quis, debitis, laborum quia
+                impedit maxime minus alias quod harum quae repellat. Deserunt, iste!"</em>
+                <footer class="blockquote-footer text-black pt-5">
+                  Camila Hernandez
+                </footer>
+            </div>
+            <div class="carousel-item">
+              <blockquote class="blockquote text-center text-black p-md-4">
+                <em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, expedita. Odio pariatur porro ullam reprehenderit neque doloribus exercitationem vitae esse, dolore voluptatum."</em>
+                <footer class="blockquote-footer text-black pt-5">
+                  Anderson Luis
+                </footer>
+            </div>
+            <div class="carousel-item">
+              <blockquote class="blockquote text-center text-black p-md-4">
+               <em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam molestias obcaecati est distinctio laudantium dolorem qui quidem numquam, eaque ipsum incidunt rem."</em>
+                <footer class="blockquote-footer text-black pt-5">
+                  Luna Wladmirovich
+                </footer>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselDepoimento"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselDepoimento"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center js-anim img-deco">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-lg-4 mb-sm-3">
+            <h4 class="h6 mb-5 fs-4 footer">CONTATO</h4>
+            <p>
+              Telefone:
+              <a
+                class="h6 text-decoration-none"
+                href="https://web.whatsapp.com/send?phone=5599999999999"
+                >+55 (99) 9 9999-9999</a
+              >
+            </p>
+            <p>
+              E-mail:
+              <a class="h6 text-decoration-none" href="mailto:email@email.com"
+                >email@email.com</a
+              >
+            </p>
+            <p>Endereço: <span class="text-white">Rua 33, número ??, Volta Redonda - RJ</span></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1842.7854057800298!2d-44.10456934202362!3d-22.520280518626194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDMxJzEzLjAiUyA0NMKwMDYnMTIuNSJX!5e0!3m2!1spt-BR!2sbr!4v1611580924466!5m2!1spt-BR!2sbr" width="350" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <div class="col-lg-4">
+            <h4 class="h6 mb-5 fs-4 footer">ÁREAS DE ATUAÇÃO</h4>
+              <p><a href="#">Familiar</a></p>
+              <p><a href="#">Criminal</a></p>
+              <p><a href="#">Empresarial</a></p>
+              <p><a href="#">Imigração</a></p>
+              <p><a href="#">Trabalhista</a></p>
+              <p><a href="#">Cível</a></p>
+          </div>
+          <div class="col-lg-4">
+            <h4 class="h6 mb-5 fs-4 footer">REDES SOCIAIS</h4>
+              <div class="col d-flex justify-content-center sociais">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-primary text-center py-2 copy-margin-top-mobile">
+        <p class="mb-0">Developer @ 2021. Alguns direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

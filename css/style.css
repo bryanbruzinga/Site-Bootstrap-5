@@ -1,0 +1,88 @@
+a {
+    text-decoration: none;
+}
+h1, h2, h4, h5, h6 {
+    font-family: "Times New Roman", serif;
+}
+p {
+    font-family: "Calibri", serif;
+    font-size: 1.2rem;
+}
+.box-shadow {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0, .05),
+                0 4px 8px 0 rgba(0,0,0, .05);
+}
+.background {
+    opacity: 0.7;
+}
+.quote {
+    background: url(img/bg-depoimento.jpg) center center;
+    background-size: cover;
+}
+.fab {
+    font-size: 2rem;
+}
+.navegacao li a{
+    margin-left: 3rem;
+}
+div.sociais a i{
+    padding-left: 1.5rem;
+}
+/* Animação */
+.js-anim {
+    opacity: 0;
+    transform: translate3d(0, 60px, 0);
+    transition: 0.4s;
+  }
+  
+  .js-anim.ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: 0.4s;
+  }
+/* Fim Animação*/
+.img-deco {
+    background: url('img/logo.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#seta-topo {
+    display: none;
+    color: white;
+    background-image: linear-gradient(45deg, #0B5ED7, #03467c);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0, .05);
+    border-radius: 50%;
+    padding: 15px;
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    z-index: 2;
+    opacity: 0.5;
+  }
+  #seta-topo:hover {
+    transition: 0.5s;
+    opacity: 1;
+  }
+
+  @media (max-width: 991px) {
+      .padding-mobile {
+          padding-bottom: 2rem;
+          background: url('img/home-2.jpg') center;
+          background-size: cover;
+      }
+      .footer {
+          margin-top: 2rem;
+      }
+      .img-deco {
+        background-position: center;
+      }
+      .copy-margin-top-mobile {
+          margin-top: 2rem;
+      }
+  }
+  @media (max-width: 768px) {
+    #seta-topo {
+        display: block;
+    }
+  }
