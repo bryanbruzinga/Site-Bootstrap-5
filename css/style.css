@@ -19,8 +19,9 @@ p {
     background: url(img/bg-depoimento.jpg) center center;
     background-size: cover;
 }
-.fab {
+.sociais .fab {
     font-size: 2rem;
+    transition: .3s;
 }
 .navegacao li a{
     margin-left: 3rem;
